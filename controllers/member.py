@@ -43,7 +43,34 @@ class MemberController(BaseController):
               
     def dologin(self):
         redirect(url(controller='member', action='index'))
-                      
+               
+               
+               
+    #todo
+    def _MyDeviceType(self):
+        return "android"
+        
+    #todo       
+    def _MyFollowingApps(self):
+        pass
+    
+    
+    #todo
+    def _MyFollowingMembers(self):
+        pass
+    
+    
+    def _MyFollowedMembers(self):
+        pass
+    
+    
+    #todo
+    def _MyBackupApps(self):
+        pass
+    
+    
+    
+    
     
 
 
