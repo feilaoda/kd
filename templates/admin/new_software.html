@@ -1,0 +1,90 @@
+<%inherit file="../site.html" />
+
+<%def name="script()">
+<link rel="stylesheet" type="text/css" href="/css/jquery.cleditor.css" />
+<script type="text/javascript" src="/js/jquery.cleditor.min.js"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+			$('#Software_description').cleditor({'width':800,'height':300,'useCSS':true});
+});
+/*]]>*/
+</script>
+
+</%def>
+
+<div class="form">
+
+<form id="software-form" action="/admin/do_new_software" method="post">
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	
+	<div class="row">
+		<label for="Software_guid">Guid <span class="required">*</span></label>	<input size="60" maxlength="128" name="Software[guid]" id="Software_guid" type="text" value="" />			</div>
+
+	<div class="row">
+
+		<label for="Software_name">Name <span class="required">*</span></label>		<input size="60" maxlength="255" name="Software[name]" id="Software_name" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_ename">Ename<span class="required">*</span></label>		<input size="60" maxlength="255" name="Software[ename]" id="Software_ename" type="text" value="" />			</div>
+
+	
+	<div class="row">
+		<label for="Software_description">Description<span class="required">*</span></label>
+                
+                <textarea name="Software[description]" id="Software_description" style="display: none; width: 800px; height: 273px;"></textarea>
+	</div>
+
+	<div class="row">
+		<label for="Software_version">Version<span class="required">*</span></label>		<input size="32" maxlength="32" name="Software[version]" id="Software_version" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_price">Price<span class="required">*</span></label>		<input size="10" maxlength="10" name="Software[price]" id="Software_price" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_size">Size</label>		<input size="10" maxlength="10" name="Software[size]" id="Software_size" type="text" value="" />			</div>
+
+	<div class="row">
+
+		<label for="Software_kind">Kind<span class="required">*</span></label>		<input name="Software[kind]" id="Software_kind" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_category">Category<span class="required">*</span></label>		<input size="32" maxlength="32" name="Software[category]" id="Software_category" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_type">Type<span class="required">*</span></label>		<input name="Software[type]" id="Software_type" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_type_tags">Type Tags</label>		<input size="60" maxlength="100" name="Software[type_tags]" id="Software_type_tags" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_logo_url">Logo Url<span class="required">*</span></label>		<input size="60" maxlength="255" name="Software[logo_url]" id="Software_logo_url" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_download_url">Download Url<span class="required">*</span></label>		<input size="60" maxlength="255" name="Software[download_url]" id="Software_download_url" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_tags">Tags</label>		<textarea rows="6" cols="50" name="Software[tags]" id="Software_tags"></textarea>			</div>
+
+	<div class="row">
+		<label for="Software_screenshot">Screenshot</label>		<textarea rows="6" cols="50" name="Software[screenshot]" id="Software_screenshot"></textarea>			</div>
+
+	<div class="row">
+		<label for="Software_create_time">Create Time</label>		<input name="Software[create_time]" id="Software_create_time" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_publish_time">Publish Time</label>		<input name="Software[publish_time]" id="Software_publish_time" type="text" value="" />			</div>
+
+	<div class="row">
+		<label for="Software_update_time">Update Time</label>		<input name="Software[update_time]" id="Software_update_time" type="text" value="" />			</div>
+
+	<div class="row buttons">
+		<input type="submit" name="yt0" value="Create" />	</div>
+
+</form>
+</div>
+
+
+

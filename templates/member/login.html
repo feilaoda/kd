@@ -1,0 +1,10 @@
+<%inherit file="../site.html" />
+
+
+<form action="${url(controller='member', action='dologin')}" method="POST">
+<label for="login">Username:</label>
+<input type="text" id="login" name="login_name" /><br />
+<label for="password">Password:</label>
+<input type="password" id="password" name="login_password" /><br />
+<input type="submit" id="submit" value="Submit" />
+</form>

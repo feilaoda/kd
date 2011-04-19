@@ -1,0 +1,44 @@
+
+<%def name="header_menu_block()">
+<div id="pageHead" class="clearfix">
+      <h1 id="pageLogo"><a title="首页" href="http://www.kongdai.com/">空袋网</a></h1>
+      
+      <div id="headNav" class="clearfix">
+        <div class="lfloat">
+          <form onsubmit="return Event.__inlineSubmit(this,event)" role="search" action="http://www.kongdai.com/search/go" name="navSearch" id="navSearch" method="get">
+            <div id="u649062_2" class="uiTypeahead">
+              <div class="wrap">
+                <input type="hidden" class="hiddenInput" autocomplete="off"/>
+                <span class="uiSearchInput textInput"><span>
+                <input type="text" title="搜索" value="" spellcheck="false" onfocus="$(&quot;search_first_focus&quot;).value = $(&quot;search_first_focus&quot;).value || +new Date(); return wait_for_load(this, event, function() {JSCC.get(&#39;j4d7d97ca7089d23044694553&#39;).init([&quot;searchRecorderBasic&quot;]); ;});; " tabindex="" autocomplete="off" placeholder="搜索" onclick='var q = $("q");if (q.value == q.getAttribute("placeholder")) {q.focus(); return false;}' name="q" id="q" accesskey="/" class="inputtext DOMControl_placeholder"/>
+                <button title="搜索" onclick='var q = $("q");if (q.value == q.getAttribute("placeholder")) {q.focus(); return false;}' type="submit">
+			</button>
+                </span></span>
+	      </div>
+              <div id="u649062_1" class="uiTypeaheadView">
+	      </div>
+            </div>
+            <input type="hidden" value="quick" id="init" name="init"/>
+            <input type="hidden" value="search_preload" class="search_sid_input" name="tas"/>
+            <input type="hidden" value="" id="search_first_focus" name="search_first_focus"/>
+          </form>
+        </div>
+        <div class="rfloat">
+          <ul id="headMenuNav">
+            <li id="navHome"><a href="/" accesskey="1">首页</a></li>
+            <!-- <li><a href="/member/profile${'/'+str(c.member_id) if c.member_id else ''}"  accesskey="2">个人主页</a></li> -->
+            <li><a href="/member/profile${'/'+str(c.member_id) if c.member_id else ''}"  accesskey="2">个人主页</a></li>
+            <li><a href="/search/findfriend">寻找朋友</a></li>
+            <li id="navAccount">
+                <a aria-haspopup="1" role="button" rel="toggle" href="http://www.kongdai.com/account/edit" id="navAccountLink">帐户<img height="1" width="1" src="http://static.ak.fbcdn.net/rsrc.php/v1/y4/r/-PAXP-deijE.gif" class="img"/></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+
+</%def>
+    
+    

@@ -1,0 +1,801 @@
+<%namespace name="person" file="../pagelet/page_person_info_tpl.html"/>
+
+
+
+<%def name="market_index_block()">
+<div id="mainContent">
+	<div id="leftContent">
+	    <div id="leftBar">
+		    ${person.person_avatar_info_block()}
+		    <div id="pageletNav">
+			    <div id="leftSideNav">
+				    <div id="pageletMainNav">
+					    <ul class="uiSideNav">
+                                                
+                                                
+                                                <li id="navItemWelcome">
+                                                        <a href="/market" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">最新热门	</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+					    </ul>
+					    
+				    </div>
+			    </div>
+		    </div>
+		    <div id="pageletGroupsNav">
+					<div id="groupSideNavWrapper">
+						<div id="groupSideNav">
+							<div role="separator" class="uiHeader uiHeaderTopBorder uiHeaderNav uiHeaderNavEmpty">
+								<div class="clearfix uiHeaderTop">
+									<div><h4 class="uiHeaderTitle"></h4></div>
+								</div>
+							</div>
+							<ul class="uiSideNav">
+                                                <li class="categoryItem">
+                                                        <a href="/market/category/application" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">游戏</span>
+                                                        </a>
+                                                        
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/casualgames" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">休闲类</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/actiongames" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">动作类</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/shootgames" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">射击类</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/sportsgames" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">比赛类</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/braingames" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">益智类</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/cardgames" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">纸牌类</span>
+                                                        </a>
+                                                </li>
+                                             
+                                                <li class="categoryItem">
+                                                        <a href="/market/category/application" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">应用软件</span>
+                                                        </a>
+                                                        
+                                                        
+                                                </li>
+                                                
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/business" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">办公</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/entertainment" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">娱乐</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/finance" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">财经</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/social" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">社交</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/sports" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">体育</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/transportation" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">交通</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/health" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">保健</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/wallpaper" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">壁纸</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/comics" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">动漫</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/medical" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">医药</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/book" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">图书</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/weather" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">天气</span>
+                                                        </a>
+                                                </li>
+                                                
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/media" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">媒体</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/photography" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">摄影</span>
+                                                        </a>
+                                                </li>
+                                                <li class="categorySubItem">
+                                                        <a href="/market/category/education" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">教育</span>
+                                                        </a>
+                                                </li>
+                                                
+                                                
+                                                    
+                                                
+					    </ul>	
+						</div>
+					</div>
+				</div>
+	    </div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="content">
+	<div id="appPageContent">
+	    
+	<div class="appBlockPage">
+	    <div class="appNewsPage">
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      <div class="appBuyWrapper appInlineBlock">
+			  <div class="appBuyOrder">
+			      <a class="appBuyButton" data-doctype="ANDROID_APP" data-ispurchased="false" data-dociconurl="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d" data-isfree="true" data-docprice="免费" data-doctitle="Google 地圖" data-docid="com.google.android.apps.maps" data-docattribution="Google Inc." href="javascript:void(0)" >
+				  <span class="appBuyButtonPrice" id="bubble-com.google.android.apps.maps">安装</span>
+			      </a>
+			  </div>
+		      </div>
+		  </div>
+	      </div>
+	      
+	      
+	    </div>
+	  
+	    <div class="appSwicth">
+		<div class="appSwicthButton">
+		    <b class=""></b>
+		    <b class=""></b>
+		    <b class="current"></b>
+		    <b class=""></b>
+		</div>
+	    </div>
+	</div>
+	  
+	  
+	<div class="appBlockPage">
+	    <div class="appNewsPage">
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      
+		  </div>
+	      </div>
+	      
+	      <div class="appInlineBlock">
+		  <div class="appSnippet">
+		      <div class="appThumbnailWrapper">
+			  <a class="appThumbnail" href="/market/detail/id10249">
+			      <img alt="Google 地圖" src="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d"></a>
+			  
+		      </div>
+		      <div class="appDetails">
+			  <h4><a href="/market/detail/id10249" title="Google 地圖" class="title">Google 地圖</a></h4>
+			  <span class="attribution"><a href="/developer?pub=Google+Inc.">Google Inc.</a>
+			  </span>
+		      </div>
+		      <div class="appBuyWrapper appInlineBlock">
+			  <div class="appBuyOrder">
+			      <a class="appBuyButton" data-doctype="ANDROID_APP" data-ispurchased="false" data-dociconurl="https://ssl.gstatic.com/android/market/com.google.android.apps.maps/hi-256-5-9cd12dac97e29683a5f6eff2cf0c0555c2d3017d" data-isfree="true" data-docprice="免费" data-doctitle="Google 地圖" data-docid="com.google.android.apps.maps" data-docattribution="Google Inc." href="javascript:void(0)" >
+				  <span class="appBuyButtonPrice" id="bubble-com.google.android.apps.maps">安装</span>
+			      </a>
+			  </div>
+		      </div>
+		  </div>
+	      </div>
+	      
+	      
+	    </div>
+	  
+	    <div class="appSwicth">
+		<div class="appSwicthButton">
+		    <b class=""></b>
+		    <b class=""></b>
+		    <b class="current"></b>
+		    <b class=""></b>
+		</div>
+	    </div>
+	</div>
+	  
+	
+	</div>
+	  
+	
+	  
+	</div>
+	
+
+</div>
+    
+    
+
+
+
+ 
+
+
+</%def>
+ 
+    
+    
+    
+    
+    
+<%def name="market_detail_block()">
+<div id="mainContent">
+	<div id="leftContent">
+	    <div id="leftBar">
+		    ${person.person_avatar_info_block()}
+		    <div id="pageletNav">
+			    <div id="leftSideNav">
+				    <div id="pageletMainNav">
+					    <ul class="uiSideNav">
+                                                
+                                                
+                                                <li id="navItemWelcome">
+                                                        <a href="/market" class="item" style="">
+                                                                <span class="imgWrap">
+                                                                        <i class="navItemImg"></i>
+                                                                </span>
+                                                                <span class="linkWrap">最新热门	</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+					    </ul>
+					    
+				    </div>
+			    </div>
+		    </div>
+                    <div class="uiHeader uiHeaderTopBorder uiHeaderNav uiHeaderNavEmpty" role="separator">
+								<div class="clearfix uiHeaderTop">
+									<div><h4 class="uiHeaderTitle"></h4></div>
+								</div>
+							</div>
+                    
+		    <div id="pageletAppDetailNav">
+		      <div id="groupAppDetailWrapper">
+			<div class="doc-metadata">
+			  <div class="doc-sharing-section">
+			    <div class="doc-sharing-widget">
+			      <div class="twitter-share-container">
+				<a data-tweeturl="http%3A%2F%2Fmarket.android.com%2Fdetails%3Fid%3Dcom.dragonplay.blackjack" data-tweetcontent="%E5%9C%A8%E2%80%9CAndroid%20%E7%94%B5%E5%AD%90%E5%B8%82%E5%9C%BA%E2%80%9D%E4%B8%AD%E6%9F%A5%E7%9C%8B%E2%80%9CLive%20BlackJack%E2%80%9D" class="goog-inline-block tweet-link" title="Twitter" href="javascript:void(0)">
+				  <span class="goog-inline-block tweet-button"></span>
+				</a>
+			      </div>
+			    </div>
+			  </div>
+			  <h4>关于此应用程序</h4>
+			  <dl class="doc-metadata-list">
+			    <dt>评分：</dt>
+			    <dd>
+			      <span title="评分：4.5 星级（不错）" class="ratings">
+			      <span class="star star-on-dark-img">&nbsp;</span>
+			      <span class="star star-on-dark-img">&nbsp;</span>
+			      <span class="star star-on-dark-img">&nbsp;</span>
+			      <span class="star star-on-dark-img">&nbsp;</span>
+			      <span class="star star-half-dark-img">&nbsp;</span>
+			      </span>(14,297)</dd>
+			    <dt>更新日期：</dt>
+			    <dd>三月 22, 2011</dd>
+			    <dt>当前版本：</dt>
+			    <dd>1.14</dd>
+			    <dt>所需的 Android 版本：</dt>
+			    <dd>1.5 及更高版本</dd>
+			    <dt>类别：</dt>
+			    <dd><a href="/apps/CARDS">纸牌游戏</a></dd>
+			    <dt>已安装次数：</dt>
+			    <dd>100,000 - 500,000</dd>
+			    <dt>大小：</dt><dd>5.3M</dd>
+			    <dt>价格：</dt><dd>免费</dd>
+			  </dl>
+			</div>
+			
+			<div class="follow-me">
+			  <h6>喜欢此应用的人</h6>
+			 
+			</div>
+			
+			
+		      </div>
+		    </div>
+	    </div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="appDetailContent">
+	  <div class="doc-banner-container">
+	    
+	    <div class="doc-icon-buy-wrapper">
+	      <div class="doc-banner-icon">
+		<img src="https://ssl.gstatic.com/android/market/com.dragonplay.blackjack/hi-256-0-62c23375360d075ee415acb72595d864952cc77e">
+	      </div>
+	      <h1>测试应用，肥老大</h1>
+	      <span class="doc-banner-ratings-price">
+		
+		<span title="评分：4.5 星级（不错）" class="ratings">
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-half-dark-img">&nbsp;</span>
+		</span>
+		<div>（共 14,297 项评分）</div>
+		<span class="followIt">
+		 <a class="followAppButton" href="#" >+加关注</a></span>
+	    </span>
+		<span class="likeIt">
+		 <a class="likeAppButton" href="#" >喜欢</a></span>
+	    </span>
+		<span class="installIt">
+		 <a class="installAppButton" href="#" >安装</a></span>
+		
+	      </span>
+		 
+	    </div></div>
+	  
+	<div class="doc-overview">
+	  
+	  <div class="" id="doc-description-container">
+	    <div class="doc-description toggle-overflow-contents">
+	      <div id="doc-original-text">
+		由大众点评网开发的手机客户端，可以随时随地快速查找餐馆；查看推荐菜，点菜不再烦恼；北京、上海等五大城市优惠餐馆，一网打尽；各类型的餐馆排行榜，找最好最炫的餐馆。 大众点评网创建于2003年4月，是中国最大的城市生活消费指南网站。其主要致力于为中国消费者提供本地的餐饮、休闲、娱乐等生活服务发表评论..
+		
+	      </div>
+	    </div>
+	    <div class="doc-description-overflow"></div>
+	  </div>
+	  
+	  
+	</div>
+	<div class="doc-overview-screenshots">
+	  <h2>应用程序屏幕截图</h2>
+	  <div class="carousel-pages">
+		    <img title="Live BlackJack" class="doc-screenshot-img" src="https://ssl.gstatic.com/android/market/com.dragonplay.blackjack/ss-0-320-480-160-0-abe91c8e57898e45f11c523f7a00c0fc085f8a57">
+		    <img title="Live BlackJack" class="doc-screenshot-img" src="https://ssl.gstatic.com/android/market/com.dragonplay.blackjack/ss-1-320-480-160-0-cb3d007b40d1f0ab925757b240492d4ff06b008a">
+		    <img title="Live BlackJack" class="doc-screenshot-img" src="https://ssl.gstatic.com/android/market/com.dragonplay.blackjack/ss-2-320-480-160-0-b7fffb5ba3c7808c6fec35435e0136640a73bb4c">
+		    <img title="Live BlackJack" class="doc-screenshot-img" src="https://ssl.gstatic.com/android/market/com.dragonplay.blackjack/ss-2-320-480-160-0-b7fffb5ba3c7808c6fec35435e0136640a73bb4c">
+		    
+		    <img title="Live BlackJack" class="doc-screenshot-img" src="https://ssl.gstatic.com/android/market/com.dragonplay.blackjack/ss-3-320-480-160-0-5a2bdb026d6049e1a1e38723fba8240e4453ff3b">
+	  </div>
+	</div>
+	<div class="doc-overview-reviews">
+	  <h2>用户评论</h2>
+	  <div class="doc-review-summary">
+	    <div class="doc-review">
+	      
+	      <div class="doc-review-rating">
+		
+		<span title="评分：4.0 星级（不错）" class="ratings">
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-on-dark-img">&nbsp;</span>
+		  <span class="star star-off-dark-img">&nbsp;</span>
+		</span>
+		<span class="doc-review-author"><strong>L</strong></span>
+		
+		<span class="doc-review-date">&ndash;&nbsp;2011年3月26日</span>
+	      </div>
+	      <h4>Good Game to spend time.</h4>
+	    </div>
+	   
+	      <div class="doc-review">
+		
+		<div class="doc-review-rating">
+		  
+		  <span title="评分：5.0 星级（不错）" class="ratings">
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		  </span>
+		  <span class="doc-review-author"><strong>Kit Ying</strong></span>
+		  <span class="doc-review-date">&ndash;&nbsp;2011年3月26日</span>
+		</div>
+		<h4>Good 支持支持 ，赞</h4>
+	      </div>
+	      
+		<div class="doc-review">
+		
+		<div class="doc-review-rating">
+		  
+		  <span title="评分：5.0 星级（不错）" class="ratings">
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		    <span class="star star-on-dark-img">&nbsp;</span>
+		  </span>
+		  <span class="doc-review-author"><strong>Kit Ying</strong></span>
+		  <span class="doc-review-date">&ndash;&nbsp;2011年3月26日</span>
+		</div>
+		<h4>Good 挺好的，支持一下</h4>
+		</div>
+		
+		
+		
+	  </div>
+	  <a data-tabbarindex="1" data-tabbarid="details" class="tabBarLink">阅读所有评论<span class="more-arrow">›</span></a>
+	</div>
+	
+	<div class="comments">
+		 
+	<h3 class="addcomment">发表评论</h3><h3>
+	 
+			<div class="form">
+
+<form method="post" action="/iphone/view/5" id="comment-form">
+	
+	<div class="row">
+		<input type="text" value="" id="AppComment_comment_author" name="AppComment[comment_author]" maxlength="32" size="50">		<span>名字(<strong>必须</strong>)</span>
+			</div>
+
+	<div class="row">
+		<input type="text" value="" id="AppComment_comment_author_email" name="AppComment[comment_author_email]" maxlength="64" size="50">		<span>邮箱(不会被公布)(<strong>必须</strong>)</span>
+			</div>
+
+	<div class="row">
+		<input type="text" value="" id="AppComment_comment_author_url" name="AppComment[comment_author_url]" maxlength="200" size="50">		<span>网址</span>
+			</div>
+
+	<div class="row">
+	<span name="AppComment[comment_rating]" id="AppComment_comment_rating">
+<span class="star-rating-control"><div class="rating-cancel"><a title="Cancel Rating"></a></div><div class="star-rating rater-0 star-rating-applied star-rating-live" id="AppComment_comment_rating_0"><a title="1">1</a></div><div class="star-rating rater-0 star-rating-applied star-rating-live" id="AppComment_comment_rating_1"><a title="2">2</a></div><div class="star-rating rater-0 star-rating-applied star-rating-live" id="AppComment_comment_rating_2"><a title="3">3</a></div><div class="star-rating rater-0 star-rating-applied star-rating-live" id="AppComment_comment_rating_3"><a title="4">4</a></div><div class="star-rating rater-0 star-rating-applied star-rating-live" id="AppComment_comment_rating_4"><a title="5">5</a></div></span><input type="radio" name="AppComment[comment_rating]" value="1" id="AppComment_comment_rating_0" class="star-rating-applied" style="display: none;">
+<input type="radio" name="AppComment[comment_rating]" value="2" id="AppComment_comment_rating_1" class="star-rating-applied" style="display: none;">
+<input type="radio" name="AppComment[comment_rating]" value="3" id="AppComment_comment_rating_2" class="star-rating-applied" style="display: none;">
+<input type="radio" name="AppComment[comment_rating]" value="4" id="AppComment_comment_rating_3" class="star-rating-applied" style="display: none;">
+<input type="radio" name="AppComment[comment_rating]" value="5" id="AppComment_comment_rating_4" class="star-rating-applied" style="display: none;">
+</span>		       
+	<label><strong>&nbsp;&nbsp;请您评分</strong></label>
+	
+	</div>       
+
+
+
+	<div class="row">
+		<label for="AppComment_内容">内容</label>		<textarea id="AppComment_comment_content" name="AppComment[comment_content]" cols="65" rows="6"></textarea>			</div>
+
+	<div class="row buttons">
+		<input type="submit" value="提交评论" name="yt0">	</div>
+
+</form>
+</div><!-- form -->	
+</h3></div>
+	
+	
+	  
+	</div>
+	  
+</div>
+</%def>
+
+
+
+
+
+
+
+  

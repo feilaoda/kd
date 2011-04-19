@@ -1,0 +1,92 @@
+<%inherit file="../site.html" />
+    <div id="pageHead" class="clearfix">
+      <h1 id="pageLogo"><a title="首页" href="http://www.kongdai.com/">空袋网</a></h1>
+      
+      <div id="headNav" class="clearfix">
+        
+        <div class="rfloat">
+          <ul id="headMenuNav">
+            <li id="navHome"><a href="/" accesskey="1">首页</a></li>
+            <!-- <li><a href="/member/profile${'/'+str(c.member_id) if c.member_id else ''}"  accesskey="2">个人主页</a></li> -->
+            <li><a href="/member/profile${'/'+str(c.member_id) if c.member_id else ''}"  accesskey="2">个人主页</a></li>
+            <li><a href="/search/findfriend">寻找朋友</a></li>
+            <li id="navAccount">
+                <a aria-haspopup="1" role="button" rel="toggle" href="http://www.kongdai.com/account/edit" id="navAccountLink">帐户<img height="1" width="1" src="http://static.ak.fbcdn.net/rsrc.php/v1/y4/r/-PAXP-deijE.gif" class="img"/></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="mainContent">
+	<div id="leftContent">
+	    <div id="leftBar">
+		   
+		    <div id="pageletNav">
+			    <div id="leftSideNav">
+				    <div id="pageletMainNav">
+					    <ul class="uiSideNav">
+                                                <li id="navItemWelcome">
+                                                    <a href="/admin/" class="item" style="">
+                                                        <span class="linkWrap">管理社区</span>
+                                                    </a>
+                                                        
+                                                </li>
+                                                
+						    
+					    </ul>
+					    
+				    </div>
+				    
+				    
+				    <div id="pageletMainNav">
+					    <div class="uiHeader uiHeaderTopBorder uiHeaderNav uiHeaderNavEmpty" role="separator">
+								<div class="clearfix uiHeaderTop">
+									<div><h4 class="uiHeaderTitle"></h4></div>
+								</div>
+							</div>
+					    <ul class="uiSideNav">
+                                                
+                                                <li id="navItemWelcome">
+                                                        <a href="/admin/new_software" class="item" style="">
+                                                               
+                                                                <span class="linkWrap">添加应用</span>
+                                                        </a>
+                                                        
+                                                </li>
+                                                <li id="navItemWelcome">
+                                                        <a href="/admin/edit_software" class="item" style="">
+                                                                
+                                                                <span class="linkWrap">编辑应用</span>
+                                                        </a>
+                                                        
+                                                </li>
+						    
+					    </ul>
+					    
+				    </div>
+				    
+				    
+			    </div>
+		    </div>
+		    <div id="pageletApps">
+		    </div>
+	    </div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="content">
+	  <div class="app_list" id="love_shopping">
+	    
+	  </div>
+	</div>
+	<div id="sidebar"> </div>
+
+    </div>
+    
+    
+

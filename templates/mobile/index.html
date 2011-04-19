@@ -1,0 +1,63 @@
+<%inherit file="../site.html" />
+
+ <div class="bd"> 
+            <div class="reg"> 
+                
+                <strong>x</strong> 
+                <div> 
+                <b>577个城市</b> 
+                <b>4860万居民</b> 
+                <b>21万个兴趣小组</b> 
+                <br/> 
+                <em>16574个小站</em> 
+                <em>9130个独立音乐人</em> 
+                <em>843个作者译者</em> 
+                </div> 
+                <a href="/member/register" class="lnk-reg"><strong>sign up</strong>注册</a> 
+            </div> 
+            
+<div class="login"> 
+    <form id="loginform" name="loginform" method="post" action="https://www.douban.com/accounts/login"> 
+        <fieldset> 
+            <legend>登录</legend> 
+            <div class="item"> 
+                <label for="form_email">Email: </label> 
+                <input name="form_email" id="form_email" value="orboss@gmail.com" type="text"> 
+            </div> 
+            <div class="item"> 
+                <label for="form_password">密&nbsp;&nbsp;码: </label> 
+                <input name="form_password" id="form_password" class="text" type="password"> 
+                <a href="http://www.douban.com/accounts/resetpassword">忘记密码</a> 
+            </div> 
+            <div class="item1"> 
+                <label for="form_remember"><input name="remember" type="checkbox" id="form_remember"> 
+                记住我</label> 
+            </div> 
+            <div class="item1"> 
+                <input value="登 &nbsp; 录" type="submit" class="bn-submit"> 
+            </div> 
+        </fieldset> 
+    </form> 
+    <script type="text/javascript"> 
+    if($("#form_email").val()){
+        $("#form_password").focus();
+    } else {
+        $("#form_email").focus();
+    }
+    </script> 
+</div> 
+ 
+        </div> 
+
+<%def name="title()">Software Home</%def>
+
+<p>${c.softs.count()} new Software posts!</p>
+
+% for soft in c.softs:
+<p class="content" style="border-style:solid; border-width:1px">
+        <span class="h3"> ${soft.name} </span>
+        <span class="h4">Posted on: ${soft.download_url}</span>
+        <br> 
+        <a href="/mobile/edit/${soft.id}"> Edit </a>        
+</p>
+% endfor

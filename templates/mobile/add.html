@@ -1,0 +1,9 @@
+<%inherit file="../site.html" />
+<%def name="title()">Add a Software</%def>
+
+<span class="h3"> Add a Software </span>
+${h.form(url(controller='mobile', action='doadd'))}
+<label>Name: ${h.text('software_name')}</label><br>
+<label>Url: ${h.text('download_url')}</label><br>
+${h.submit('soft', 'Add New Software')}
+${h.end_form()}
